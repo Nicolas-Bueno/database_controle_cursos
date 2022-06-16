@@ -32,3 +32,11 @@ CREATE TABLE aluno_disciplinas (
     FOREIGN KEY (aluno_id) REFERENCES aluno(id),  
     FOREIGN KEY (disciplinas_id) REFERENCES disciplina(id)
 );
+
+/*
+* Acrescentando nova coluna
+*/
+ALTER TABLE aluno_disciplinas ADD conceito VARCHAR(45);
+
+SET SQL_SAFE_UPDATES=0;
+UPDATE aluno_disciplinas SET conceito='SM';
