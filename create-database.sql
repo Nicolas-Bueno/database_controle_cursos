@@ -1,4 +1,5 @@
 CREATE DATABASE cursos;
+
 USE cursos;
 
 CREATE TABLE curso (
